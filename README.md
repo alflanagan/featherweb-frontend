@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Featherweb Frontend Application
+
+This is to be a website for controlling my home-built robot using the [FeatherS2](https://feathers2.io) microprocessor. It
+will provide low- and high-level interfaces for instructing the robot's motion, and reading whatever sensors I end up piling
+on to the thing.
+
+The first task is to get the robot walking, which requires both hardware setup and on-board software. The project for that is
+alflanagan/featherboa using CircuitPython. (At some point it may be necessary to switch to programming the board in C. I'll
+have to see what roadblocks I run into.)
+
+This project is based on Create React App, Typescript, and Redux. Below is the original README created by `npx create-react-app featherweb-frontend --template=redux-typescript`.
+
+## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
