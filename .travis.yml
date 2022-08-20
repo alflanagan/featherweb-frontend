@@ -7,4 +7,5 @@ node_js:
   - lts/erbium
   - lts/fermium
   - lts/gallium
-  - stable
+  # "stable" fails to install on osx :eyeroll"
+  # - stable
