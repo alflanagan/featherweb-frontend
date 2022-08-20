@@ -1,3 +1,6 @@
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://app.travis-ci.com/alflanagan/featherweb-frontend.svg?branch=main)](https://app.travis-ci.com/alflanagan/featherweb-frontend)
+
 # Featherweb Frontend Application
 
 This is to be a website for controlling my home-built robot using the [FeatherS2](https://feathers2.io) microprocessor. It

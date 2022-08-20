@@ -4,6 +4,7 @@ os:
   - osx
 dist: focal
 node_js:
-  - erbium
-  - fermium
-  - gallium
+  - lts/erbium
+  - lts/fermium
+  - lts/gallium
+  - stable
