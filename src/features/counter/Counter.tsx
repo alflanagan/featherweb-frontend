@@ -1,22 +1,23 @@
-import React, { useState } from 'react';
+import React, { ReactElement, useState } from 'react'
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import { useAppSelector, useAppDispatch } from '../../app/hooks'
 import {
   decrement,
   increment,
   incrementByAmount,
   incrementAsync,
   incrementIfOdd,
-  selectCount,
-} from './counterSlice';
-import styles from './Counter.module.css';
+  selectCount
+} from './counterSlice'
+import styles from './Counter.module.css'
 
-export function Counter() {
-  const count = useAppSelector(selectCount);
-  const dispatch = useAppDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+export function Counter (): ReactElement {
+  const count = useAppSelector(selectCount)
+  const dispatch = useAppDispatch()
+  const [incrementAmount, setIncrementAmount] = useState('2')
 
-  const incrementValue = Number(incrementAmount) || 0;
+  let incrementValue = Number(incrementAmount)
+  if (Number.isNaN(incrementValue)) incrementValue = 0
 
   return (
     <div>
@@ -52,6 +53,7 @@ export function Counter() {
         </button>
         <button
           className={styles.asyncButton}
+          // eslint-disable-next-line @typescript-eslint/no-misused-promises
           onClick={() => dispatch(incrementAsync(incrementValue))}
         >
           Add Async
@@ -64,5 +66,5 @@ export function Counter() {
         </button>
       </div>
     </div>
-  );
+  )
 }
