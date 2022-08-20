@@ -5,8 +5,8 @@ will provide low- and high-level interfaces for instructing the robot's motion, 
 on to the thing.
 
 The first task is to get the robot walking, which requires both hardware setup and on-board software. The project for that is
-alflanagan/featherboa using CircuitPython. (At some point it may be necessary to switch to programming the board in C. I'll
-have to see what roadblocks I run into.)
+[alflanagan/featherboa](https://github.com/alflanagan/featherboa.git) using CircuitPython. (At some point it may be necessary
+to switch to programming the board in C. I'll have to see what roadblocks I run into.)
 
 This project is based on Create React App, Typescript, and Redux. Below is the original README created by `npx create-react-app featherweb-frontend --template=redux-typescript`.
 
